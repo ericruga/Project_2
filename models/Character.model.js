@@ -4,11 +4,12 @@ const { Schema, model } = require("mongoose");
 const characterSchema = new Schema(
   {
     name: String,
-    status: String,
-    species: String,
-    gender: String,
+    date: String,
+    location: String,
+    station: String,
     image: String,
-    apiId: Number
+    price: Number, 
+    description: String
   },
   {
     timestamps: true,
