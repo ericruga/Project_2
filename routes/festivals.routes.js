@@ -2,18 +2,18 @@ const router = require("express").Router();
 
 const alert = require("alert");
 const isLoggedIn = require("../middleware/isLoggedIn");
-//const Festival = require("../models/Festival.model");
+const Festival = require("../models/Festival.model");
 const User = require("../models/User.model");
 const Api = require("../services/ApiHandler");
-const CharactersAPI = new Api()
+//const CharactersAPI = new Api()
 
-router.get('/festival',(req, res)=>{
+router.get('/festivals',(req, res, next)=>{
     
-    
-    CharactersAPI
-    .getAllCharacters()
-    .then((allCharacters) => {
-        res.render(`characters/list`, {characters: allCharacters.data.results} )
+    //CharactersAPI
+    //.getAllFestivals()
+    Festival.find()
+    .then((allFestivals) => {
+        res.render(`festivals/list.hbs`, { allFestivals } )
     
     })
     .catch(err => console.log(err));

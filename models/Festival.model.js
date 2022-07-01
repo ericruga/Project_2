@@ -1,8 +1,10 @@
-const { Schema, model } = require("mongoose");
+//const { Schema, model } = require("mongoose");
+const mongoose = require("mongoose");
+const festivalSchema = new mongoose.Schema({
 
 // TODO: Please make sure you edit the user model to whatever makes sense in this case
-const festivalSchema = new Schema(
-  {
+//const festivalSchema = new Schema(
+  //{
     name: String,
     date: String,
     location: String,
@@ -11,9 +13,9 @@ const festivalSchema = new Schema(
     price: Number, 
     description: String
   },
-  {
-    timestamps: true,
-  }
+  // {
+  //   timestamps: true,
+  // }
 );
 
 
@@ -29,5 +31,5 @@ festivalSchema.pre("save", function(next) {
 
 
 // const Character = model("Character", userSchema);
-
-module.exports = model("Festival", festivalSchema);
+const Festival = mongoose.model("Festival", festivalSchema);
+module.exports = Festival;
