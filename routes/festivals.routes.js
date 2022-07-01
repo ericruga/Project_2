@@ -21,7 +21,7 @@ router.get('/festivals',(req, res, next)=>{
 
 
  router.get("/festivals/winter", (req, res) => {
-   Festival.find({ station: "winter"})
+   Festival.find({ station: "Winter"})
    .then((festivalsWinter) => {
     console.log(festivalsWinter);
      res.render("festivals/winter.hbs", {festivalsWinter} )
@@ -29,6 +29,35 @@ router.get('/festivals',(req, res, next)=>{
    .catch(err => console.log(err))
  });
 
+
+
+ router.get("/festivals/summer", (req, res) => {
+   Festival.find({ station: 'Summer' })
+     .then((festivalsSummer) => {
+       console.log(festivalsSummer);
+       res.render("festivals/summer.hbs", { festivalsSummer });
+     })
+     .catch((err) => console.log(err));
+ });
+
+  router.get("/festivals/spring", (req, res) => {
+    Festival.find({ station: "Spring" })
+      .then((festivalsSpring) => {
+        console.log(festivalsSpring);
+        res.render("festivals/spring.hbs", { festivalsSpring });
+      })
+      .catch((err) => console.log(err));
+  });
+
+
+   router.get("/festivals/autumn", (req, res) => {
+     Festival.find({ station: "Autumn" })
+       .then((festivalsAutumn) => {
+         console.log(festivalsAutumn);
+         res.render("festivals/autumn.hbs", { festivalsAutumn });
+       })
+       .catch((err) => console.log(err));
+   });
 
 
 
