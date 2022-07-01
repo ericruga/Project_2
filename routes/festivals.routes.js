@@ -8,9 +8,6 @@ const Api = require("../services/ApiHandler");
 //const CharactersAPI = new Api()
 
 router.get('/festivals',(req, res, next)=>{
-    
-    //CharactersAPI
-    //.getAllFestivals()
     Festival.find()
     .then((allFestivals) => {
         res.render(`festivals/list.hbs`, { allFestivals } )
@@ -21,6 +18,25 @@ router.get('/festivals',(req, res, next)=>{
     
     
 })
+
+
+ router.get("/festivals/winter", (req, res) => {
+   Festival.find({ station: "winter"})
+   .then((festivalsWinter) => {
+    console.log(festivalsWinter);
+     res.render("festivals/winter.hbs", {festivalsWinter} )
+   })
+   .catch(err => console.log(err))
+ });
+
+
+
+
+
+
+ 
+
+
 
 router.post("/add-favorite", isLoggedIn ,(req, res) =>{
 const query = { name, status, species, gender, image, apiId } = req.body
@@ -54,12 +70,19 @@ const idToCheck = req.body.apiId;
             .catch((err)=>{
             console.log(err)
             })
-            
-            
-            
 		}
-	}) 
+
+	})
+    
+    
+
+
 })
+
+
+
+
+
 
 
 router.post("/delete-favorite",isLoggedIn,(req,res)=>{
