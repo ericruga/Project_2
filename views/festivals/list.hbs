@@ -8,7 +8,11 @@
       <div class='card shadow-sm'>
         <img src="{{image}}" alt="">
         <p>{{name}}</p>
-        <p>{{status}}</p>
+        <p>{{date}}</p>
+        <p>{{location}}</p>
+        <p>{{description}}</p>
+        <p>Price: {{price}}€</p>
+
         <form action = "/add-favorite" method="POST">
           
           <input type="hidden" name="name" value={{name}}>
