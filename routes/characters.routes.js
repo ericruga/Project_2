@@ -2,12 +2,12 @@ const router = require("express").Router();
 
 const alert = require("alert");
 const isLoggedIn = require("../middleware/isLoggedIn");
-const Character = require("../models/Character.model");
+const Festival = require("../models/Festival.model");
 const User = require("../models/User.model");
 const Api = require("../services/ApiHandler");
 const CharactersAPI = new Api()
 
-router.get('/characters',(req, res)=>{
+router.get('/festival',(req, res)=>{
     
     
     CharactersAPI
