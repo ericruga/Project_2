@@ -61,8 +61,7 @@ router.get('/festivals',(req, res, next)=>{
 
 
 
-
-
+router.get("/AboutUs", (req, res, next) => res.render("aboutus.hbs"));
  
 
 
