@@ -1,16 +1,25 @@
-<form action="/auth/signup" method="POST">
-   <label> Username
-      <input type="text" name="username">
-   </label>
-   <label> Password
-      <input type="password" name="password">
-   </label>
 
-   <button type="submit">Submit</button>
+<div class='row row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5 my-5'></div>
+<form action="/auth/signup" method="POST">
+  <label>
+    Username
+    <input type="text" name="username" />
+  </label>
+
+  <label>
+    Email
+    <input type="email" name="email" placeholder="" />
+  </label>
+
+  <label>
+    Password
+    <input type="password" name="password" placeholder="**********"/>
+  </label>
+
+  <button type="submit">Submit</button>
 </form>
 
 {{#if errorMessage}}
-<p class="error">{{errorMessage}}</p>
+  <p class="error">{{errorMessage}}</p>
 {{/if}}
-
-   
+</div>
