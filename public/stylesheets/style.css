@@ -8,9 +8,19 @@ a {
 }
 
 h1 {
-  color: 15px;
+  
+  font-family: comic sans-serif;
+ background-color: black;
+ font-size: large;
 }
+
 
 .error{
   color: red;
+}
+
+.mainPic{
+  background-image: url("../images/mainpic.jpeg");
+  width: 500px;
+  height: 500px;
 }
