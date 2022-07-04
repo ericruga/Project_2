@@ -22,10 +22,10 @@ const userSchema = new Schema({
     required: [true, "Password is required."],
   },
   favorites: [
-    // {
-    //   type: Schema.Types.ObjectId,
-    //   ref: "Festivals",
-    // },
+    {
+      type: Schema.Types.ObjectId,
+      ref: "Festival",
+    },
   ],
   //referencias de la bd characrters
 });
