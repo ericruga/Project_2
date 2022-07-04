@@ -56,24 +56,26 @@ router.get("/AboutUs", (req, res, next) => res.render("aboutus.hbs"));
 router.post("/add-favorite", isLoggedIn, (req, res) => {
   const query = ({ name, date, location, station, image, price, description } =
     req.body);
+    const userId = req.session.user._id
   const idToCheck = req.body.apiId;
-  Festival.find({ apiId: idToCheck }).then((festArray) => {
+  console.log(idToCheck, "holaaaaaaaaaaaaa")
+  Festival.find({_id: idToCheck }).then((festArray) => {
     //comprobar si ese apiId ya esta en db characters
     if (festArray.length === 0) {
       Festival.create(query)
         .then((result) => {
-          User.findByIdAndUpdate(req.user._id, {
-            $push: { favorites: result._id },
+          User.findByIdAndUpdate(userId, {
+            $push: { favorites: result.id },
           }).then(() => {
             res.redirect("/festivals");
           });
         })
         .catch((err) => console.log(err));
     } else {
-      User.findById(req.user._id)
+      User.findById(userId)
         .then((user) => {
           if (!user.favorites.includes(festArray[0]._id)) {
-            User.findByIdAndUpdate(req.user._id, {
+            User.findByIdAndUpdate(userId, {
               $push: { favorites: festArray[0]._id },
             }).then(() => {
               res.redirect("/festivals");
