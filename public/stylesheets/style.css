@@ -8,19 +8,23 @@ a {
 }
 
 h1 {
-  
   font-family: comic sans-serif;
- background-color: black;
- font-size: large;
+  background-color: lightgray;
+  font-size: large;
 }
 
-
-.error{
+.error {
   color: red;
 }
 
 .mainPic{
   background-image: url("../images/mainpic.jpeg");
-  width: 500px;
-  height: 500px;
+  width: 100%;
+    height: 1100px;
+    justify-content: center;
 }
+
+/* .video {
+  width: 800px;
+  height: 800px;
+} */

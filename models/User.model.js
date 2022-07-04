@@ -6,15 +6,15 @@ const userSchema = new Schema({
     type: String,
     trim: true,
     required: [true, "Username is required."],
-    unique: true,
+ 
   },
 
-  mail: {
+  email: {
     type: String,
-    // required: [true, "Mail is required."],
-    // unique: true,
-    // lowercase: true,
-    // trim: true
+    required: [true, "Mail is required."],
+    unique: true,
+    lowercase: true,
+    trim: true
   },
 
   password: {
@@ -22,10 +22,10 @@ const userSchema = new Schema({
     required: [true, "Password is required."],
   },
   favorites: [
-    {
-      type: Schema.Types.ObjectId,
-      ref: "Character",
-    },
+    // {
+    //   type: Schema.Types.ObjectId,
+    //   ref: "Festivals",
+    // },
   ],
   //referencias de la bd characrters
 });
