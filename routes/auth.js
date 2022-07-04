@@ -19,7 +19,7 @@ router.get("/signup", isLoggedOut, (req, res) => {
 });
 
 router.post("/signup", isLoggedOut, (req, res) => {
-  const { username, mail, password } = req.body;
+  const { username, email, password } = req.body;
 //console.log(password);
   if (!username) {
     return res
@@ -62,7 +62,7 @@ router.post("/signup", isLoggedOut, (req, res) => {
         // Create a user and save it in the database
         return User.create({
           username,
-          mail,
+          email,
           password: hashedPassword,
         });
       })
@@ -142,13 +142,13 @@ router.post("/login", isLoggedOut, (req, res, next) => {
     });
 });
 
-router.get("/logout", isLoggedIn, (req, res) => {
-  req.session.destroy((err) => {
-    if (err) {
-      return res
-        .status(500)
-        .render("auth/logout", { errorMessage: err.message });
-    }
+router.get("/logout", (req, res) => {
+  req.session.destroy(err => {
+    // if (err){
+    //   return res
+    //     .status(500)
+    //     .render("auth/logout");
+    // }
     res.redirect("/");
   });
 });

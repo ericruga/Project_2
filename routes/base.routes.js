@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const isLoggedIn = require("../middleware/isLoggedIn");
+const isLoggedOut = require("../middleware/isLoggedOut");
 const User = require("../models/User.model");
 
 
@@ -7,6 +8,10 @@ const User = require("../models/User.model");
 router.get("/", (req, res, next) => {
   res.render("index");
 });
+
+
+
+
 
 router.get("/profile", isLoggedIn, (req, res, next) =>{
 

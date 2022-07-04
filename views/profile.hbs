@@ -1,10 +1,12 @@
-<h1> Bienvenido {{user.username}}</h1>
+<a href="/auth/logout">Log Out</a>
+<h1> WELCOME {{user.username}}</h1>
 {{#each user.favorites}}
-<img src={{image}} alt={{name}}>
-<p>{{name}}</p>
-<form action = "/delete-favorite" method="POST">
-    <input type="hidden" name="id" value={{_id}}>
+  <img src={{image}} alt={{name}} />
+  <p>{{name}}</p>
 
-<button type="submit">Borrar Favorito</button>
-</form>
+  <form action="/delete-favorite" method="POST">
+    <input type="hidden" name="id" value={{_id}} />
+
+    <button type="submit">Borrar Favorito</button>
+  </form>
 {{/each}}
