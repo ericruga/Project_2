@@ -9,7 +9,15 @@ const userSchema = new Schema({
     unique: true,
   },
 
-  passwordHash: {
+  mail: {
+    type: String,
+    // required: [true, "Mail is required."],
+    // unique: true,
+    // lowercase: true,
+    // trim: true
+  },
+
+  password: {
     type: String,
     required: [true, "Password is required."],
   },

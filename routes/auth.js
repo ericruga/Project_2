@@ -19,8 +19,8 @@ router.get("/signup", isLoggedOut, (req, res) => {
 });
 
 router.post("/signup", isLoggedOut, (req, res) => {
-  const { username, password } = req.body;
-console.log(password);
+  const { username, mail, password } = req.body;
+//console.log(password);
   if (!username) {
     return res
       .status(400)
@@ -62,7 +62,8 @@ console.log(password);
         // Create a user and save it in the database
         return User.create({
           username,
-          passwordHash: hashedPassword,
+          mail,
+          password: hashedPassword,
         });
       })
       .then((user) => {
@@ -94,7 +95,7 @@ router.get("/login", isLoggedOut, (req, res) => {
 });
 
 router.post("/login", isLoggedOut, (req, res, next) => {
-  const { username, password } = req.body;
+  const { username, password } = req.body; 
 
   if (!username) {
     return res
@@ -121,7 +122,7 @@ router.post("/login", isLoggedOut, (req, res, next) => {
       }
 
       // If user is found based on the username, check if the in putted password matches the one saved in the database
-      bcrypt.compare(password, user.password).then((isSamePassword) => {
+      bcrypt.compare(password, user.password).then((isSamePassword) => { // modificado
         if (!isSamePassword) {
           return res
             .status(400)

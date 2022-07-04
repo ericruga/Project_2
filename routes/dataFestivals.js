@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 
 // Import of the model Recipe from './models/Recipe.model.js'
 const Festival = require('./models/Festival.model');
+const User = require('./models/User.model');
 // Import of the data from './data.json'
 const data = require('./data');
 
