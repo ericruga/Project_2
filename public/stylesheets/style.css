@@ -120,14 +120,13 @@ h4{
 font-family: 'Bungee Hairline', cursive;
 font-weight: bold;
 color: black;
+margin-top: 25px;
 
 
 }
 .logout{
 display: flex;
 text-align:right;
-
-
 
 }
 
@@ -136,3 +135,15 @@ text-align:right;
   width: 350px;
   margin-top: 20px;
  }
+
+.centrado{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Bungee Hairline', cursive;
+  font-weight: bold;
+  color: black;
+  margin-top: 10px;
+  
+}
