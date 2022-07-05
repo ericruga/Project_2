@@ -416,7 +416,7 @@
     "name": "UMF: Ultra Music Festival",
     "date": "25-27 March 2023",
     "location": "Miami, USA", 
-    "station": "",
+    "station": "winter",
     "image" : "https://d49r1np2lhhxv.cloudfront.net/www/admin/uploads/images/Top50MusicFestivalsintheWorld_UMF.jpg", 
     "price" : 290,
     "description": "The Ultra brand may be known around the world, but its Miami showpiece still feels like the holy grail for EDM and big-room house fans. There are not many festivals that see 165,000 people pack into a city park every year to party, transforming it into a dancefloor like no other."
@@ -438,5 +438,33 @@
     "image" : "https://d49r1np2lhhxv.cloudfront.net/www/admin/uploads/images/Top50MusicFestivalsintheWorld_DGTL.jpg", 
     "price" : 300,
     "description": "At the forefront of the underground, DGTL balances its uncompromising passion for cutting edge sounds and visual arts with its equally impassioned green initiatives. The concept has clearly worked as the festival has struck a chord with the dance community, resulting in added editions in São Paulo, Barcelona and Tel Aviv. "
+
+},
+{
+    "name": "Polaris: Electronic Music Festival",
+    "date": "29 November 2023",
+    "location": "Verbier, Switzerland", 
+    "station": "autumn",
+    "image" : "https://www.yonder.fr/sites/default/files/lestops/15-polaris-festival-verbier.jpg", 
+    "price" : 150,
+    "description": "One of the earliest music festivals in winter, the stage is set at an impressive altitude of 2,200 meters. And I don’t just mean a regular stage at the mountain base; its famous le Mouton Noir is perched on the slopes within Verbier Ski Resort.This music festival’s tickets come with free ski lift passes so you can access the main stage at no extra cost."
+},
+{
+    "name": "Your Paradise Fiji",
+    "date": "2 - 5 February 2023",
+    "location": "Mamanucas Islands, Fiji", 
+    "station": "winter",
+    "image" : "https://dancingastronaut.com/wp-content/uploads/2016/05/your-paradise-16.jpg", 
+    "price" : 1500,
+    "description": "Clear, sparkling water and luxurious resorts are the least of what you’ll find; friendly locals, fellow tourists to be excited with, gorgeous landscapes and water-bound activities will keep you busy when you’re not dancing on the beaches. There are only 600 spots at this festival. With limited attendees, you can get much closer to stage without feeling like a packed sardine. Expect electronic dance music curated to fit the beach theme."
+},
+{
+    "name": "Project Sound Tulum",
+    "date": "29 October -8 November 2023",
+    "location": "Tulum, Mexico", 
+    "station": "autumn",
+    "image" : "https://pbs.twimg.com/media/DTRHBIFXkAA9c2b?format=jpg&name=large", 
+    "price" : 390,
+    "description": "Project Sound & Sonorous is an electronic music platform with international significance that will offer the public an adventure full of good music and dream parties. All this surrounded by the spectacular places of the beautiful city of Tulum. Its mission is and always will be to create exclusive environments where people can live an incredible experience in a safe environment, listening to the best national and international DJs."
 }]
  
