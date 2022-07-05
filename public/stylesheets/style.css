@@ -1,10 +1,12 @@
 body {
+  font-family: 'Bungee Hairline', cursive;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: white;
 }
 
 a {
-  color: #00b7ff;
+  color: black;
 }
 
 h1 {
@@ -15,6 +17,7 @@ h1 {
 
 .error {
   color: red;
+  font-family: mintage;
 }
 
 .mainPic{
@@ -22,6 +25,7 @@ h1 {
   width: 100%;
     height: 1100px;
     justify-content: center;
+    margin-top: 20px;
 }
 
 /* .video {
@@ -46,6 +50,7 @@ h2 {
 /* hover styles */
 .location-listing {
   position: relative;
+  color: aliceblue;
 }
 
 .location-image {
@@ -55,12 +60,13 @@ h2 {
 
 .location-image img {
   filter: blur(0px);
-  transition: filter 0.3s ease-in;
+  transition: filter 0.5s ease-in;
   transform: scale(1.1);
+
 }
 
 .location-title {
-  font-size: 1.5em;
+  font-size: 5em;
   font-weight: bold;
   text-decoration: none;
   z-index: 1;
@@ -70,9 +76,10 @@ h2 {
   top: 0;
   left: 0;
   opacity: 0;
-  transition: opacity .5s;
-  background: rgba(90,0,10,0.4);
+  transition: opacity .10s;
+  background: rgba(255, 0, 0, 0);
   color: white;
+  
   
   /* position the text in t’ middle*/
   display: flex;
@@ -82,8 +89,44 @@ h2 {
 
 .location-listing:hover .location-title {
   opacity: 1;
+  color: lightgrey;
 }
 
 .location-listing:hover .location-image img {
   filter: blur(2px);
+}
+
+.container{
+  margin-top: 80px;
+  font-family: 'Bungee Hairline', cursive;
+}
+
+.mar {
+  margin-right: -25px;
+  font-family: 'Bungee Hairline', cursive;
+}
+
+h4{
+  font-size: 40px;
+  text-align: center;
+  color: gray;
+}
+
+.welcome{
+  margin-top: 20px;
+}
+
+.lorem{
+font-family: 'Bungee Hairline', cursive;
+font-weight: bold;
+color: black;
+
+
+}
+.logout{
+display: flex;
+text-align:right;
+
+
+
 }
