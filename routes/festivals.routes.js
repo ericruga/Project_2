@@ -58,9 +58,9 @@ router.post("/add-favorite", isLoggedIn, (req, res) => {
     req.body);
     const userId = req.session.user._id
   const idToCheck = req.body.apiId;
-  console.log(idToCheck, "holaaaaaaaaaaaaa")
+  //console.log(idToCheck, "holaaaaaaaaaaaaa")
   Festival.find({_id: idToCheck }).then((festArray) => {
-    //comprobar si ese apiId ya esta en db characters
+    
     if (festArray.length === 0) {
       Festival.create(query)
         .then((result) => {

@@ -14,7 +14,7 @@
           <p>Price: {{price}}€</p>
 
           <form action="/add-favorite" method="POST">
-
+            <input type="hidden" name="apiId" value={{id}}>
             <button type="submit button" class="btn btn-outline-secondary">Añadir a favoritos</button>
           </form>
         </div>

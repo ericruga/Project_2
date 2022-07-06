@@ -11,9 +11,12 @@ a {
 }
 
 h1 {
-  font-family: comic sans-serif;
-  background-color: lightgray;
-  font-size: large;
+  font-size: 55px;
+  text-align: center;
+}
+h2 {
+  margin-bottom: .5em;
+  font-size: 40px;
 }
 
 .error {
@@ -39,9 +42,7 @@ img {
   width: 100%; /* need to overwrite inline dimensions */
   height: auto;
 }
-h2 {
-  margin-bottom: .5em;
-}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -206,3 +207,5 @@ height: 250px;
 flex-direction: column;
 margin-top: 0px;
  }
+
+ 
