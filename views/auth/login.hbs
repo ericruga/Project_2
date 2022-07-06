@@ -1,20 +1,32 @@
-<div class="loginn">
+<div class="containerrr">
 
+
+<div class="losrows">
+<div class="roww">
 <form action="/auth/login" method="POST">
    <label> Username
       <input type="text" name="username">
    </label>
+</div>
 
+<div class="roww">
    <label> Password
       <input type="password" name="password">
    </label>
-
-   <button type="submit">Submit</button>
-</form>
 </div>
+
+<div class="roww">
+   
+   <button type="submit">Submit</button>
+ </div>
+ </form>
+</div>
+</div>
+
 {{#if errorMessage}}
 <p class="error">{{errorMessage}}</p>
 {{/if}}
+
 
 
 

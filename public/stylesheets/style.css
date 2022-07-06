@@ -19,6 +19,8 @@ h2 {
   font-size: 40px;
 }
 
+
+
 .error {
   color: red;
   font-family: mintage;
@@ -33,10 +35,7 @@ h2 {
    
 }
 
-/* .video {
-  width: 800px;
-  height: 800px;
-} */
+
 
 img {
   width: 100%; /* need to overwrite inline dimensions */
@@ -141,13 +140,15 @@ text-align:right;
 
  .centrado{
   position: absolute;
+
   top: 40%;
+
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Bungee Hairline', cursive;
   font-weight: bold;
   color: black;
-  margin-top: 120px;
+  margin-top: 250px;
   
 }
 
@@ -177,16 +178,7 @@ width: 270px;
 height: 220px;
 }
 
-/* /.containerr{
-  position: relative;
-  height: 100vh;
-  width: 100vh;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
 
-} */
 
 .containerr video {
   z-index: -1; 
@@ -213,7 +205,7 @@ margin-top: 0px;
   transform: translate(-50%, -50%);
   font-weight: bold;
   color: black;
-  margin-top: 180px;
+  margin-top: 80px;
  }
 
  .parrMain{
@@ -223,5 +215,35 @@ margin-top: 0px;
   font-weight: bold;
   font-size: 20px;
   color: black;
-  margin-top: 480px;
+  margin-top: 380px;
  }
+
+ .profilewelcome{
+margin-top: 30px;
+margin-bottom: 80px;
+font-weight: bold;
+ }
+
+ .containerrr{
+  background-image: url("../images/login.jpeg");
+  width: 100%;
+  height: 650px;
+  margin-top: 20px;
+ }
+
+ .roww{
+color: white;
+font-size: 30px;
+display: flex;
+
+justify-content: center;
+margin-top: 10px
+
+ }
+
+ .losrows{
+
+  
+  margin-bottom: 100px;
+ }
+

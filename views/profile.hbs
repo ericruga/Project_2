@@ -1,11 +1,15 @@
-
+<div class="profilewelcome">
 <h2 class="welcome lorem"> WELCOME {{user.username}},</h2> 
-<h2>THIS IS YOUR LIST WITH YOUR FAVORITES FESTIVALS <a class="logout" href="/auth/logout">Log Out</a></h2>
+
+
+<h4>THIS IS YOUR LIST WITH YOUR FAVORITES FESTIVALS 
+<a href="/auth/logout"><button type="button" class="btn btn-outline-secondary" >LOG OUT</button></a>
+</h4>
+</div>
 
 
 
-
-<div class="card mb-3" style="max-width: 1200px;">
+<div class="card mb-3 card border-0" style="max-width: 1200px;">
   {{#each user.favorites}}
   <div class="row g-0">
     <div class="col-md-4">
