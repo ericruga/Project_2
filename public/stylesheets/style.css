@@ -176,6 +176,7 @@ background-image: url("../images/login.jpeg");
 .mainlogo{
 width: 270px;
 height: 220px;
+margin-top: -350px;
 }
 
 
